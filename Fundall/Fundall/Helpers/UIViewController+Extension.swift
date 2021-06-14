@@ -9,6 +9,16 @@ import UIKit
 
 extension UIViewController {
     
+    
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
+    static func instantiate(storyboardName: String) -> Self {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+    }
+    
     func showAlert (alertText: String, alertMessage: String) {
         let alert = UIAlertController(title: alertText, message: alertMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Got it", style: .default, handler: nil))

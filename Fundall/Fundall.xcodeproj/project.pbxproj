@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */; };
 		B433F70F267787E1003B6372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F70E267787E1003B6372 /* AppDelegate.swift */; };
 		B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F710267787E1003B6372 /* SceneDelegate.swift */; };
 		B433F718267787E4003B6372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B433F717267787E4003B6372 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B433F70B267787E1003B6372 /* Fundall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B433F70E267787E1003B6372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B433F710267787E1003B6372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */,
+				B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */,
+				B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */,
 				B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */,
 				B433F7372677DBAE003B6372 /* LoginViewController.swift in Sources */,
 				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
