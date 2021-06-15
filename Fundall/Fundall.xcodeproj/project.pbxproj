@@ -24,6 +24,15 @@
 		B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */; };
 		B433F73F2677E0C4003B6372 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B433F73E2677E0C4003B6372 /* IQKeyboardManagerSwift */; };
 		B4995E4626782E4F00D546F0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4995E4526782E4F00D546F0 /* Kingfisher */; };
+		B4D0A0C02678B946003FC11D /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */; };
+		B4D0A0C22678B95D003FC11D /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C12678B95D003FC11D /* SignUpResponse.swift */; };
+		B4D0A0C42678B96A003FC11D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C32678B96A003FC11D /* LoginRequest.swift */; };
+		B4D0A0C62678B976003FC11D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C52678B976003FC11D /* LoginResponse.swift */; };
+		B4D0A0C82678BA94003FC11D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C72678BA94003FC11D /* HTTPMethod.swift */; };
+		B4D0A0CA2678BB47003FC11D /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C92678BB47003FC11D /* HTTPHeader.swift */; };
+		B4D0A0CC2678BC4B003FC11D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0CB2678BC4B003FC11D /* Endpoint.swift */; };
+		B4D0A0CE2678BDBA003FC11D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0CD2678BDBA003FC11D /* Result.swift */; };
+		B4D0A0D02678C30E003FC11D /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0CF2678C30E003FC11D /* RequestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +53,15 @@
 		B433F7362677DBAE003B6372 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B433F7382677DBD6003B6372 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		B4D0A0C12678B95D003FC11D /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		B4D0A0C32678B96A003FC11D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		B4D0A0C52678B976003FC11D /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B4D0A0C72678BA94003FC11D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B4D0A0C92678BB47003FC11D /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		B4D0A0CB2678BC4B003FC11D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B4D0A0CD2678BDBA003FC11D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B4D0A0CF2678C30E003FC11D /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +131,8 @@
 			children = (
 				B433F72E2677DB26003B6372 /* SignUpViewController.swift */,
 				B433F7302677DB3C003B6372 /* SignUp.storyboard */,
+				B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */,
+				B4D0A0C12678B95D003FC11D /* SignUpResponse.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -124,6 +144,8 @@
 				B433F7322677DB58003B6372 /* Login.storyboard */,
 				B421F2FC26781598001F59C7 /* LifeStyle.storyboard */,
 				B421F2FE267815B1001F59C7 /* Welcome.storyboard */,
+				B4D0A0C32678B96A003FC11D /* LoginRequest.swift */,
+				B4D0A0C52678B976003FC11D /* LoginResponse.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -140,6 +162,11 @@
 		B433F7282677D836003B6372 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B4D0A0C72678BA94003FC11D /* HTTPMethod.swift */,
+				B4D0A0C92678BB47003FC11D /* HTTPHeader.swift */,
+				B4D0A0CB2678BC4B003FC11D /* Endpoint.swift */,
+				B4D0A0CD2678BDBA003FC11D /* Result.swift */,
+				B4D0A0CF2678C30E003FC11D /* RequestError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -246,12 +273,21 @@
 			files = (
 				B421F2FA267805A2001F59C7 /* String+Extension.swift in Sources */,
 				B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */,
+				B4D0A0C62678B976003FC11D /* LoginResponse.swift in Sources */,
 				B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */,
+				B4D0A0CC2678BC4B003FC11D /* Endpoint.swift in Sources */,
 				B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */,
+				B4D0A0CE2678BDBA003FC11D /* Result.swift in Sources */,
 				B433F7372677DBAE003B6372 /* LoginViewController.swift in Sources */,
+				B4D0A0C02678B946003FC11D /* SignUpRequest.swift in Sources */,
 				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
 				B433F70F267787E1003B6372 /* AppDelegate.swift in Sources */,
+				B4D0A0C22678B95D003FC11D /* SignUpResponse.swift in Sources */,
 				B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */,
+				B4D0A0C82678BA94003FC11D /* HTTPMethod.swift in Sources */,
+				B4D0A0CA2678BB47003FC11D /* HTTPHeader.swift in Sources */,
+				B4D0A0D02678C30E003FC11D /* RequestError.swift in Sources */,
+				B4D0A0C42678B96A003FC11D /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

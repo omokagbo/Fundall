@@ -32,6 +32,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
+        validateTextFields()
         let controller = HomeViewController.instantiate(storyboardName: "Home")
         navigationController?.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(controller, animated: true)
@@ -48,5 +49,37 @@ class SignUpViewController: UIViewController {
         passwordTextField.isSecureTextEntry.toggle()
         let imageName = passwordTextField.isSecureTextEntry ? "eye" : "eye.slash"
         maskPswdBtn.setImage(UIImage(systemName: imageName), for: .normal)
+    }
+    
+    func validateTextFields() {
+        
+        if firstNameTextField.text == "" {
+            self.showAlert(alertText: "First Name Empty", alertMessage: "Please, enter your first name")
+        }
+        
+        else if lastNameTextField.text == "" {
+            self.showAlert(alertText: "Last Name Empty", alertMessage: "Please, enter your last name")
+        }
+        
+        else if emailTextField.text == "" {
+            self.showAlert(alertText: "Email Empty", alertMessage: "Please, enter your email")
+        }
+        
+        else if emailTextField.text != "" && emailTextField.text!.isValidEmail == false {
+            self.showAlert(alertText: "Invalid Email", alertMessage: "Please, enter a valid email")
+        }
+        
+        else if passwordTextField.text != "" && passwordTextField.text!.count < 11 {
+            self.showAlert(alertText: "Invalid Email", alertMessage: "Please, enter a valid email")
+        }
+        
+        else if passwordTextField.text == "" {
+            self.showAlert(alertText: "Password Empty", alertMessage: "Please enter your password")
+        }
+        
+        else if passwordTextField.text != "" && passwordTextField.text!.isValidPassword == false {
+            self.showAlert(alertText: "Invalid Password",
+                           alertMessage: "Password must be alphanumeric and must be greater than 8 characters")
+        }
     }
 }
