@@ -8,6 +8,15 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    
+    enum SignupError: Error {
+        case missingFirstName
+        case missingLastName
+        case invalidEmail
+        case invalidPhoneNumber
+        case incorrectPasswordFormat
+        case incompleteField
+    }
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -23,10 +32,16 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
+        let controller = HomeViewController.instantiate(storyboardName: "Home")
+        navigationController?.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     
     @IBAction func loginBtnTapped(_ sender: UIButton) {
+        let controller = LoginViewController.instantiate(storyboardName: "Welcome")
+        navigationController?.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func maskPswdBtnTapped(_ sender: UIButton) {

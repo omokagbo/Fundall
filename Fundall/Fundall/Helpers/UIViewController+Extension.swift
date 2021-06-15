@@ -32,11 +32,5 @@ extension UIViewController {
         self.navigationController?.view.backgroundColor = .clear
         self.navigationController?.navigationBar.tintColor = .systemBlue
     }
-    
-    func navigateToHome() {
-        let newStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        let newVC = newStoryboard.instantiateViewController(identifier: "HomeTabBarNav") as UITabBarController
-        navigationController?.modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(newVC, animated: true)
-    }
+
 }
