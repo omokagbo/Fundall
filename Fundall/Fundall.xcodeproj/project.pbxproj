@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */; };
+		B421F2FA267805A2001F59C7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421F2F9267805A2001F59C7 /* String+Extension.swift */; };
+		B421F2FD26781598001F59C7 /* LifeStyle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B421F2FC26781598001F59C7 /* LifeStyle.storyboard */; };
+		B421F2FF267815B1001F59C7 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B421F2FE267815B1001F59C7 /* Welcome.storyboard */; };
 		B433F70F267787E1003B6372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F70E267787E1003B6372 /* AppDelegate.swift */; };
 		B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F710267787E1003B6372 /* SceneDelegate.swift */; };
 		B433F718267787E4003B6372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B433F717267787E4003B6372 /* Assets.xcassets */; };
@@ -19,9 +23,14 @@
 		B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F7382677DBD6003B6372 /* HomeViewController.swift */; };
 		B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */; };
 		B433F73F2677E0C4003B6372 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B433F73E2677E0C4003B6372 /* IQKeyboardManagerSwift */; };
+		B4995E4626782E4F00D546F0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4995E4526782E4F00D546F0 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B421F2F9267805A2001F59C7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B421F2FC26781598001F59C7 /* LifeStyle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LifeStyle.storyboard; sourceTree = "<group>"; };
+		B421F2FE267815B1001F59C7 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		B433F70B267787E1003B6372 /* Fundall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B433F70E267787E1003B6372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B433F710267787E1003B6372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4995E4626782E4F00D546F0 /* Kingfisher in Frameworks */,
 				B433F73F2677E0C4003B6372 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +120,10 @@
 		B433F7262677BA5A003B6372 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B433F7322677DB58003B6372 /* Login.storyboard */,
 				B433F7362677DBAE003B6372 /* LoginViewController.swift */,
+				B433F7322677DB58003B6372 /* Login.storyboard */,
+				B421F2FC26781598001F59C7 /* LifeStyle.storyboard */,
+				B421F2FE267815B1001F59C7 /* Welcome.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */,
+				B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */,
+				B421F2F9267805A2001F59C7 /* String+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 			name = Fundall;
 			packageProductDependencies = (
 				B433F73E2677E0C4003B6372 /* IQKeyboardManagerSwift */,
+				B4995E4526782E4F00D546F0 /* Kingfisher */,
 			);
 			productName = Fundall;
 			productReference = B433F70B267787E1003B6372 /* Fundall.app */;
@@ -196,6 +211,7 @@
 			mainGroup = B433F702267787E1003B6372;
 			packageReferences = (
 				B433F73D2677E0C4003B6372 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B4995E4426782E4F00D546F0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B433F70C267787E1003B6372 /* Products */;
 			projectDirPath = "";
@@ -215,7 +231,9 @@
 				B433F7352677DB74003B6372 /* Home.storyboard in Resources */,
 				B433F71B267787E4003B6372 /* LaunchScreen.storyboard in Resources */,
 				B433F718267787E4003B6372 /* Assets.xcassets in Resources */,
+				B421F2FD26781598001F59C7 /* LifeStyle.storyboard in Resources */,
 				B433F7312677DB3C003B6372 /* SignUp.storyboard in Resources */,
+				B421F2FF267815B1001F59C7 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B421F2FA267805A2001F59C7 /* String+Extension.swift in Sources */,
 				B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */,
+				B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */,
 				B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */,
 				B433F7372677DBAE003B6372 /* LoginViewController.swift in Sources */,
 				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
@@ -435,6 +455,14 @@
 				minimumVersion = 6.5.6;
 			};
 		};
+		B4995E4426782E4F00D546F0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -442,6 +470,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B433F73D2677E0C4003B6372 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		B4995E4526782E4F00D546F0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4995E4426782E4F00D546F0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
