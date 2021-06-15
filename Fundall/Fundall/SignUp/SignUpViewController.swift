@@ -69,8 +69,12 @@ class SignUpViewController: UIViewController {
             self.showAlert(alertText: "Invalid Email", alertMessage: "Please, enter a valid email")
         }
         
-        else if passwordTextField.text != "" && passwordTextField.text!.count < 11 {
-            self.showAlert(alertText: "Invalid Email", alertMessage: "Please, enter a valid email")
+        else if phoneTextField.text == "" {
+            self.showAlert(alertText: "Phone Number Empty", alertMessage: "Please, enter your phone number")
+        }
+        
+        else if phoneTextField.text != "" && phoneTextField.text!.count < 11 {
+            self.showAlert(alertText: "Invalid Phone Number", alertMessage: "Please, enter a valid phone number")
         }
         
         else if passwordTextField.text == "" {
