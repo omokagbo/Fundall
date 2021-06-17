@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct LoginResponse {
+struct LoginResponse: Codable {
     
 }

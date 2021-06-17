@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct SignUpResponse {
+struct SignUpResponse: Codable {
     
 }
