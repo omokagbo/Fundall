@@ -3,27 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */; };
+		B421F2FA267805A2001F59C7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421F2F9267805A2001F59C7 /* String+Extension.swift */; };
+		B421F2FD26781598001F59C7 /* LifeStyle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B421F2FC26781598001F59C7 /* LifeStyle.storyboard */; };
+		B421F2FF267815B1001F59C7 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B421F2FE267815B1001F59C7 /* Welcome.storyboard */; };
 		B433F70F267787E1003B6372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F70E267787E1003B6372 /* AppDelegate.swift */; };
 		B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F710267787E1003B6372 /* SceneDelegate.swift */; };
-		B433F713267787E1003B6372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F712267787E1003B6372 /* ViewController.swift */; };
-		B433F716267787E1003B6372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B433F714267787E1003B6372 /* Main.storyboard */; };
 		B433F718267787E4003B6372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B433F717267787E4003B6372 /* Assets.xcassets */; };
 		B433F71B267787E4003B6372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B433F719267787E4003B6372 /* LaunchScreen.storyboard */; };
+		B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F72E2677DB26003B6372 /* SignUpViewController.swift */; };
+		B433F7312677DB3C003B6372 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B433F7302677DB3C003B6372 /* SignUp.storyboard */; };
+		B433F7332677DB58003B6372 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B433F7322677DB58003B6372 /* Login.storyboard */; };
+		B433F7352677DB74003B6372 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B433F7342677DB74003B6372 /* Home.storyboard */; };
+		B433F7372677DBAE003B6372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F7362677DBAE003B6372 /* LoginViewController.swift */; };
+		B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F7382677DBD6003B6372 /* HomeViewController.swift */; };
+		B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */; };
+		B433F73F2677E0C4003B6372 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B433F73E2677E0C4003B6372 /* IQKeyboardManagerSwift */; };
+		B4995E4626782E4F00D546F0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4995E4526782E4F00D546F0 /* Kingfisher */; };
+		B4D0A0C02678B946003FC11D /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */; };
+		B4D0A0C22678B95D003FC11D /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C12678B95D003FC11D /* SignUpResponse.swift */; };
+		B4D0A0C42678B96A003FC11D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C32678B96A003FC11D /* LoginRequest.swift */; };
+		B4D0A0C62678B976003FC11D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0C52678B976003FC11D /* LoginResponse.swift */; };
+		B4D0A0DC267B6CFA003FC11D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0DB267B6CFA003FC11D /* NetworkService.swift */; };
+		B4D0A0DF267B6DE4003FC11D /* API Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0DE267B6DE4003FC11D /* API Error.swift */; };
+		B4D0A0E6267B6DF9003FC11D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0E0267B6DF8003FC11D /* Result.swift */; };
+		B4D0A0EA267B6DF9003FC11D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0E4267B6DF9003FC11D /* APIClient.swift */; };
+		B4D0A0EB267B6DF9003FC11D /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0E5267B6DF9003FC11D /* RequestError.swift */; };
+		B4D0A0ED267B6F13003FC11D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0EC267B6F13003FC11D /* Route.swift */; };
+		B4D0A0EF267B71AC003FC11D /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0EE267B71AC003FC11D /* Method.swift */; };
+		B4D0A0F3267B9DFB003FC11D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A0F2267B9DFB003FC11D /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B421F2F9267805A2001F59C7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B421F2FC26781598001F59C7 /* LifeStyle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LifeStyle.storyboard; sourceTree = "<group>"; };
+		B421F2FE267815B1001F59C7 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		B433F70B267787E1003B6372 /* Fundall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B433F70E267787E1003B6372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B433F710267787E1003B6372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B433F712267787E1003B6372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B433F715267787E1003B6372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B433F717267787E4003B6372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B433F71A267787E4003B6372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B433F71C267787E4003B6372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B433F72E2677DB26003B6372 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B433F7302677DB3C003B6372 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		B433F7322677DB58003B6372 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B433F7342677DB74003B6372 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B433F7362677DBAE003B6372 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B433F7382677DBD6003B6372 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		B4D0A0C12678B95D003FC11D /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		B4D0A0C32678B96A003FC11D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		B4D0A0C52678B976003FC11D /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B4D0A0DB267B6CFA003FC11D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B4D0A0DE267B6DE4003FC11D /* API Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API Error.swift"; sourceTree = "<group>"; };
+		B4D0A0E0267B6DF8003FC11D /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B4D0A0E4267B6DF9003FC11D /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B4D0A0E5267B6DF9003FC11D /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		B4D0A0EC267B6F13003FC11D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B4D0A0EE267B71AC003FC11D /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		B4D0A0F2267B9DFB003FC11D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4995E4626782E4F00D546F0 /* Kingfisher in Frameworks */,
+				B433F73F2677E0C4003B6372 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B433F70D267787E1003B6372 /* Fundall */,
+				B4D0A0DD267B6DCA003FC11D /* FormerNetwork */,
 				B433F70C267787E1003B6372 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +103,139 @@
 		B433F70D267787E1003B6372 /* Fundall */ = {
 			isa = PBXGroup;
 			children = (
-				B433F70E267787E1003B6372 /* AppDelegate.swift */,
-				B433F710267787E1003B6372 /* SceneDelegate.swift */,
-				B433F712267787E1003B6372 /* ViewController.swift */,
-				B433F714267787E1003B6372 /* Main.storyboard */,
-				B433F717267787E4003B6372 /* Assets.xcassets */,
-				B433F719267787E4003B6372 /* LaunchScreen.storyboard */,
-				B433F71C267787E4003B6372 /* Info.plist */,
+				B433F72226778AB9003B6372 /* App + Scene Delegate */,
+				B433F7262677BA5A003B6372 /* Login */,
+				B433F7252677BA4E003B6372 /* SignUp */,
+				B433F7272677BB94003B6372 /* Home */,
+				B4D0A0DA267B6CDE003FC11D /* Networking */,
+				B433F72D2677D941003B6372 /* LaunchScreen */,
+				B433F73A2677DE08003B6372 /* Helpers */,
+				B433F72326778ACD003B6372 /* Resources */,
 			);
 			path = Fundall;
+			sourceTree = "<group>";
+		};
+		B433F72226778AB9003B6372 /* App + Scene Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B433F70E267787E1003B6372 /* AppDelegate.swift */,
+				B433F710267787E1003B6372 /* SceneDelegate.swift */,
+			);
+			path = "App + Scene Delegate";
+			sourceTree = "<group>";
+		};
+		B433F72326778ACD003B6372 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B433F717267787E4003B6372 /* Assets.xcassets */,
+				B433F71C267787E4003B6372 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B433F7252677BA4E003B6372 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A0F0267B993E003FC11D /* Models */,
+				B4D0A0F1267B994D003FC11D /* Views */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B433F7262677BA5A003B6372 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A0F4267B9EDF003FC11D /* Views */,
+				B4D0A0F5267B9EEC003FC11D /* Models */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B433F7272677BB94003B6372 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B433F7342677DB74003B6372 /* Home.storyboard */,
+				B433F7382677DBD6003B6372 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B433F72D2677D941003B6372 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B433F719267787E4003B6372 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		B433F73A2677DE08003B6372 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */,
+				B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */,
+				B421F2F9267805A2001F59C7 /* String+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B4D0A0DA267B6CDE003FC11D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A0F2267B9DFB003FC11D /* NetworkClient.swift */,
+				B4D0A0DB267B6CFA003FC11D /* NetworkService.swift */,
+				B4D0A0EC267B6F13003FC11D /* Route.swift */,
+				B4D0A0EE267B71AC003FC11D /* Method.swift */,
+				B4D0A0E5267B6DF9003FC11D /* RequestError.swift */,
+				B4D0A0DE267B6DE4003FC11D /* API Error.swift */,
+				B4D0A0E0267B6DF8003FC11D /* Result.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B4D0A0DD267B6DCA003FC11D /* FormerNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A0E4267B6DF9003FC11D /* APIClient.swift */,
+			);
+			path = FormerNetwork;
+			sourceTree = "<group>";
+		};
+		B4D0A0F0267B993E003FC11D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A0C12678B95D003FC11D /* SignUpResponse.swift */,
+				B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4D0A0F1267B994D003FC11D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B433F7302677DB3C003B6372 /* SignUp.storyboard */,
+				B433F72E2677DB26003B6372 /* SignUpViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4D0A0F4267B9EDF003FC11D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B433F7362677DBAE003B6372 /* LoginViewController.swift */,
+				B433F7322677DB58003B6372 /* Login.storyboard */,
+				B421F2FC26781598001F59C7 /* LifeStyle.storyboard */,
+				B421F2FE267815B1001F59C7 /* Welcome.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4D0A0F5267B9EEC003FC11D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A0C32678B96A003FC11D /* LoginRequest.swift */,
+				B4D0A0C52678B976003FC11D /* LoginResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +254,10 @@
 			dependencies = (
 			);
 			name = Fundall;
+			packageProductDependencies = (
+				B433F73E2677E0C4003B6372 /* IQKeyboardManagerSwift */,
+				B4995E4526782E4F00D546F0 /* Kingfisher */,
+			);
 			productName = Fundall;
 			productReference = B433F70B267787E1003B6372 /* Fundall.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +285,10 @@
 				Base,
 			);
 			mainGroup = B433F702267787E1003B6372;
+			packageReferences = (
+				B433F73D2677E0C4003B6372 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B4995E4426782E4F00D546F0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B433F70C267787E1003B6372 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,9 +303,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B433F7332677DB58003B6372 /* Login.storyboard in Resources */,
+				B433F7352677DB74003B6372 /* Home.storyboard in Resources */,
 				B433F71B267787E4003B6372 /* LaunchScreen.storyboard in Resources */,
 				B433F718267787E4003B6372 /* Assets.xcassets in Resources */,
-				B433F716267787E1003B6372 /* Main.storyboard in Resources */,
+				B421F2FD26781598001F59C7 /* LifeStyle.storyboard in Resources */,
+				B433F7312677DB3C003B6372 /* SignUp.storyboard in Resources */,
+				B421F2FF267815B1001F59C7 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +320,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B433F713267787E1003B6372 /* ViewController.swift in Sources */,
+				B421F2FA267805A2001F59C7 /* String+Extension.swift in Sources */,
+				B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */,
+				B4D0A0C62678B976003FC11D /* LoginResponse.swift in Sources */,
+				B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */,
+				B4D0A0DF267B6DE4003FC11D /* API Error.swift in Sources */,
+				B4D0A0EA267B6DF9003FC11D /* APIClient.swift in Sources */,
+				B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */,
+				B4D0A0E6267B6DF9003FC11D /* Result.swift in Sources */,
+				B433F7372677DBAE003B6372 /* LoginViewController.swift in Sources */,
+				B4D0A0EF267B71AC003FC11D /* Method.swift in Sources */,
+				B4D0A0DC267B6CFA003FC11D /* NetworkService.swift in Sources */,
+				B4D0A0F3267B9DFB003FC11D /* NetworkClient.swift in Sources */,
+				B4D0A0C02678B946003FC11D /* SignUpRequest.swift in Sources */,
+				B4D0A0ED267B6F13003FC11D /* Route.swift in Sources */,
+				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
 				B433F70F267787E1003B6372 /* AppDelegate.swift in Sources */,
+				B4D0A0EB267B6DF9003FC11D /* RequestError.swift in Sources */,
+				B4D0A0C22678B95D003FC11D /* SignUpResponse.swift in Sources */,
 				B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */,
+				B4D0A0C42678B96A003FC11D /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B433F714267787E1003B6372 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B433F715267787E1003B6372 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B433F719267787E4003B6372 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +480,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
-				INFOPLIST_FILE = Fundall/Info.plist;
+				INFOPLIST_FILE = Fundall/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
-				INFOPLIST_FILE = Fundall/Info.plist;
+				INFOPLIST_FILE = Fundall/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +533,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B433F73D2677E0C4003B6372 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+		B4995E4426782E4F00D546F0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B433F73E2677E0C4003B6372 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B433F73D2677E0C4003B6372 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		B4995E4526782E4F00D546F0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4995E4426782E4F00D546F0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B433F703267787E1003B6372 /* Project object */;
 }

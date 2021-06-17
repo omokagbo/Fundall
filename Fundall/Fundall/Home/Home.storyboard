@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rM-l8-FZ9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfP-JD-CaF">
+                                        <rect key="frame" x="40" y="40" width="24" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="arrowshape.zigzag.right.fill" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fundall e-Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pV-DG-jHC">
+                                        <rect key="frame" x="94" y="43" width="174" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-06-14 at 23.41.46" translatesAutoresizingMaskIntoConstraints="NO" id="vIq-d7-hjj">
+                                        <rect key="frame" x="298" y="40" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="L9G-iM-TKk"/>
+                                            <constraint firstAttribute="height" constant="70" id="gOc-CL-al5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="vIq-d7-hjj" firstAttribute="top" secondItem="6rM-l8-FZ9" secondAttribute="top" constant="40" id="56E-1B-YeJ"/>
+                                    <constraint firstItem="WfP-JD-CaF" firstAttribute="top" secondItem="6rM-l8-FZ9" secondAttribute="top" constant="40" id="Cdt-lK-bvO"/>
+                                    <constraint firstItem="4pV-DG-jHC" firstAttribute="leading" secondItem="WfP-JD-CaF" secondAttribute="trailing" constant="30" id="GG3-TX-XHQ"/>
+                                    <constraint firstItem="WfP-JD-CaF" firstAttribute="leading" secondItem="6rM-l8-FZ9" secondAttribute="leading" constant="40" id="Kbe-K3-JAN"/>
+                                    <constraint firstAttribute="height" constant="300" id="dts-8x-mSs"/>
+                                    <constraint firstItem="4pV-DG-jHC" firstAttribute="centerY" secondItem="WfP-JD-CaF" secondAttribute="centerY" id="mty-ey-ADw"/>
+                                    <constraint firstItem="vIq-d7-hjj" firstAttribute="leading" secondItem="4pV-DG-jHC" secondAttribute="trailing" constant="30" id="nIf-Y1-Bdf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6rM-l8-FZ9" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="JOo-s4-pW4"/>
+                            <constraint firstItem="6rM-l8-FZ9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="JWx-uo-qC2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6rM-l8-FZ9" secondAttribute="trailing" id="sjf-7d-y79"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screenshot 2021-06-14 at 23.41.46" width="254" height="310"/>
+        <image name="arrowshape.zigzag.right.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
