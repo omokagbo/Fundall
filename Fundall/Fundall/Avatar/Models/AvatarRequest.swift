@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct AvatarRequest {
+struct AvatarRequest: Codable {
     
 }
