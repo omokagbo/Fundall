@@ -20,6 +20,11 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavBar()
+        if UserDefaults.standard.bool(forKey: "isLoggedIn") == true {
+            let controller = LoginViewController.instantiate(storyboardName: "LifeStyle")
+            self.navigationController?.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(controller, animated: true)
+        } 
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
@@ -35,7 +40,13 @@ class SignUpViewController: UIViewController {
                 return
             }
         }
-        
+        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        if let email = emailTextField.text, !email.isEmpty, email != "" {
+            UserDefaults.standard.setValue(email, forKey: "email")
+        }
+        if let firstName = firstNameTextField.text, !firstName.isEmpty, firstName != "" {
+            UserDefaults.standard.setValue(firstName, forKey: "firstName")
+        }
     }
     
     
