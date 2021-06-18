@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ProfileResponse {
+struct ProfileResponse: Codable {
     
 }

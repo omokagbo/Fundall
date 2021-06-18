@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct AvatarResponse {
+struct AvatarResponse: Codable {
     
 }

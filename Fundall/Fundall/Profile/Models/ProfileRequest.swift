@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ProfileRequest {
+struct ProfileRequest: Codable {
     
 }
