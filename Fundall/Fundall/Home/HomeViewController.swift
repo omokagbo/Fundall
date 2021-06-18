@@ -15,11 +15,12 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func didTapRequestCard(_ sender: UIButton) {
-
     }
     
     @IBAction func didTapAnalytics(_ sender: UIButton) {
-        
+        let controller = AnalyticsViewController.instantiate(storyboardName: "Analytics")
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
 }

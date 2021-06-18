@@ -13,4 +13,7 @@ class AnalyticsViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func didTapBackBtn(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

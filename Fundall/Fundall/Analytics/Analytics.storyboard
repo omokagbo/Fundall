@@ -29,7 +29,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="kcd-Za-IR6">
-                                                <rect key="frame" x="0.0" y="90" width="406" height="216"/>
+                                                <rect key="frame" x="30" y="90" width="356" height="216"/>
                                             </datePicker>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O19-AJ-oAK">
                                                 <rect key="frame" x="20" y="326" width="366" height="51"/>
@@ -89,18 +89,29 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tb-GI-UQH">
+                                                <rect key="frame" x="10" y="10" width="34" height="30"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapBackBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ifc-td-FeW"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="O19-AJ-oAK" firstAttribute="leading" secondItem="4J5-2E-pI1" secondAttribute="leading" constant="20" id="0Ww-Lf-2VF"/>
-                                            <constraint firstItem="kcd-Za-IR6" firstAttribute="leading" secondItem="4J5-2E-pI1" secondAttribute="leading" id="HFg-tE-jjn"/>
-                                            <constraint firstAttribute="trailing" secondItem="kcd-Za-IR6" secondAttribute="trailing" id="HPD-3J-Vvd"/>
+                                            <constraint firstItem="7tb-GI-UQH" firstAttribute="leading" secondItem="4J5-2E-pI1" secondAttribute="leading" constant="10" id="3oR-3l-sze"/>
+                                            <constraint firstAttribute="trailing" secondItem="kcd-Za-IR6" secondAttribute="trailing" constant="20" id="HPD-3J-Vvd"/>
                                             <constraint firstItem="hW1-o0-STI" firstAttribute="top" secondItem="O19-AJ-oAK" secondAttribute="bottom" constant="20" id="Jag-O3-vf3"/>
                                             <constraint firstItem="hW1-o0-STI" firstAttribute="centerX" secondItem="4J5-2E-pI1" secondAttribute="centerX" id="KJe-eg-DiG"/>
                                             <constraint firstItem="iSI-Ox-9OX" firstAttribute="centerX" secondItem="4J5-2E-pI1" secondAttribute="centerX" id="SPa-bP-csB"/>
                                             <constraint firstItem="7Ux-mR-R6O" firstAttribute="leading" secondItem="4J5-2E-pI1" secondAttribute="leading" constant="30" id="ZpO-9I-DbQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Byt-kh-v3F" secondAttribute="trailing" constant="20" id="c5e-11-Efb"/>
                                             <constraint firstItem="Byt-kh-v3F" firstAttribute="leading" secondItem="4J5-2E-pI1" secondAttribute="leading" constant="20" id="d5D-b0-cxA"/>
+                                            <constraint firstItem="7tb-GI-UQH" firstAttribute="top" secondItem="4J5-2E-pI1" secondAttribute="top" constant="10" id="fCH-e6-QV7"/>
+                                            <constraint firstItem="kcd-Za-IR6" firstAttribute="leading" secondItem="7Ux-mR-R6O" secondAttribute="leading" id="gMl-Za-pAQ"/>
                                             <constraint firstItem="7Ux-mR-R6O" firstAttribute="top" secondItem="4J5-2E-pI1" secondAttribute="top" constant="40" id="hqm-GU-Nry"/>
                                             <constraint firstItem="kcd-Za-IR6" firstAttribute="top" secondItem="7Ux-mR-R6O" secondAttribute="bottom" constant="20" id="jcM-OA-G2q"/>
                                             <constraint firstItem="iSI-Ox-9OX" firstAttribute="top" secondItem="hW1-o0-STI" secondAttribute="bottom" constant="20" id="kA5-Tp-FVd"/>
@@ -135,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="-90"/>
+            <point key="canvasLocation" x="-1003" y="-341"/>
         </scene>
     </scenes>
     <resources>
