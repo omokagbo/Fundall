@@ -35,7 +35,6 @@
 		B4D0A107267BF045003FC11D /* AvatarResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A106267BF045003FC11D /* AvatarResponse.swift */; };
 		B4D0A109267BF050003FC11D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A108267BF050003FC11D /* LoginResponse.swift */; };
 		B4D0A10B267BF059003FC11D /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A10A267BF059003FC11D /* ProfileResponse.swift */; };
-		B4D0A10D267BF064003FC11D /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A10C267BF064003FC11D /* SignUpResponse.swift */; };
 		B4D0A10F267BF2E0003FC11D /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A10E267BF2E0003FC11D /* APIResponse.swift */; };
 		B4D0A113267C13D2003FC11D /* RequestCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D0A112267C13D2003FC11D /* RequestCard.storyboard */; };
 		B4D0A115267C13E6003FC11D /* RequestCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A114267C13E6003FC11D /* RequestCardViewController.swift */; };
@@ -43,6 +42,9 @@
 		B4D0A119267C1436003FC11D /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D0A118267C1436003FC11D /* Analytics.storyboard */; };
 		B4D0A11B267C1F58003FC11D /* CardTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */; };
 		B4D0A11D267C1F6E003FC11D /* CardTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */; };
+		B4D0A121267C46CF003FC11D /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A120267C46CF003FC11D /* Extension+Data.swift */; };
+		B4D0A123267C944B003FC11D /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A122267C944B003FC11D /* RequestParameter.swift */; };
+		B4D0A125267C9947003FC11D /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A124267C9947003FC11D /* SignUpResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +76,6 @@
 		B4D0A106267BF045003FC11D /* AvatarResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarResponse.swift; sourceTree = "<group>"; };
 		B4D0A108267BF050003FC11D /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		B4D0A10A267BF059003FC11D /* ProfileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
-		B4D0A10C267BF064003FC11D /* SignUpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		B4D0A10E267BF2E0003FC11D /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		B4D0A112267C13D2003FC11D /* RequestCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestCard.storyboard; sourceTree = "<group>"; };
 		B4D0A114267C13E6003FC11D /* RequestCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCardViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +83,9 @@
 		B4D0A118267C1436003FC11D /* Analytics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
 		B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeTableViewCell.swift; sourceTree = "<group>"; };
+		B4D0A120267C46CF003FC11D /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
+		B4D0A122267C944B003FC11D /* RequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
+		B4D0A124267C9947003FC11D /* SignUpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 				B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */,
 				B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */,
 				B421F2F9267805A2001F59C7 /* String+Extension.swift */,
+				B4D0A120267C46CF003FC11D /* Extension+Data.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				B4D0A0EE267B71AC003FC11D /* Method.swift */,
 				B4D0A0F6267BE578003FC11D /* AppError.swift */,
 				B4D0A10E267BF2E0003FC11D /* APIResponse.swift */,
+				B4D0A122267C944B003FC11D /* RequestParameter.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -211,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D0A0BF2678B946003FC11D /* SignUpRequest.swift */,
-				B4D0A10C267BF064003FC11D /* SignUpResponse.swift */,
+				B4D0A124267C9947003FC11D /* SignUpResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -416,11 +422,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B421F2FA267805A2001F59C7 /* String+Extension.swift in Sources */,
+				B4D0A125267C9947003FC11D /* SignUpResponse.swift in Sources */,
 				B433F73C2677DE27003B6372 /* UIViewController+Extension.swift in Sources */,
 				B421F2F82677FB1D001F59C7 /* UIView+Extension.swift in Sources */,
 				B433F7392677DBD6003B6372 /* HomeViewController.swift in Sources */,
 				B4D0A10F267BF2E0003FC11D /* APIResponse.swift in Sources */,
 				B433F7372677DBAE003B6372 /* LoginViewController.swift in Sources */,
+				B4D0A123267C944B003FC11D /* RequestParameter.swift in Sources */,
 				B4D0A109267BF050003FC11D /* LoginResponse.swift in Sources */,
 				B4D0A0EF267B71AC003FC11D /* Method.swift in Sources */,
 				B4D0A10B267BF059003FC11D /* ProfileResponse.swift in Sources */,
@@ -432,9 +440,9 @@
 				B4D0A11B267C1F58003FC11D /* CardTypeCollectionViewCell.swift in Sources */,
 				B4D0A0ED267B6F13003FC11D /* Route.swift in Sources */,
 				B4D0A11D267C1F6E003FC11D /* CardTypeTableViewCell.swift in Sources */,
+				B4D0A121267C46CF003FC11D /* Extension+Data.swift in Sources */,
 				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
 				B4D0A0FD267BED8C003FC11D /* ProfileRequest.swift in Sources */,
-				B4D0A10D267BF064003FC11D /* SignUpResponse.swift in Sources */,
 				B433F70F267787E1003B6372 /* AppDelegate.swift in Sources */,
 				B4D0A0F7267BE578003FC11D /* AppError.swift in Sources */,
 				B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */,
