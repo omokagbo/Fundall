@@ -29,8 +29,9 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func didTapLoginBtn(_ sender: UIButton) {
+        
         if let email = emailLbl.text, !email.isEmpty, email != "", let password = passwordTextField.text, !password.isEmpty, password != "" {
-            NetworkService.shared.authenticateUser(parameter: LoginRequest.init(email: emailLbl.text!, password: passwordTextField.text!)) { (result) in
+            NetworkService.shared.authenticateUser(parameter: LoginRequest.init(email: email, password: password)) { (result) in
                 switch result {
                 case .success(_):
                     let controller = HomeViewController.instantiate(storyboardName: "Home")
@@ -41,6 +42,8 @@ class WelcomeViewController: UIViewController {
                     return
                 }
             }
+        } else {
+            self.showAlert(alertText: "Empty Fields", alertMessage: "Please fill in your details or login")
         }
         
     }
