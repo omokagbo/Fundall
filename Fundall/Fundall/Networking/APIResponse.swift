@@ -8,7 +8,7 @@
 import Foundation
 
 struct APIResponse<T: Codable>: Codable {
-    let status: Int
+    let status: String?
     let message: String?
     let data: T?
     let error: String?
