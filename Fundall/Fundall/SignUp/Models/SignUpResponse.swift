@@ -8,5 +8,9 @@
 import Foundation
 
 struct SignUpResponse: Codable {
-    
+    let response: SignUpResponseType
+}
+
+struct SignUpResponseType: Codable {
+    let message: String
 }

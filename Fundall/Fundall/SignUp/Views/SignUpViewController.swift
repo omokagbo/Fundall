@@ -9,15 +9,6 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    enum SignupError: Error {
-        case missingFirstName
-        case missingLastName
-        case invalidEmail
-        case invalidPhoneNumber
-        case incorrectPasswordFormat
-        case incompleteField
-    }
-
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -28,28 +19,23 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkService.shared.authenticateUser { (result) in
-            switch result {
-            case .success(let data):
-                print(data)
-            case .failure(let error):
-                print(error.localizedDescription)
-                return
-            }
-        }
         self.setNavBar()
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
         validateTextFields()
-        
-        NetworkService.shared.registerUser { (result) in
-            
+        NetworkService.shared.registerUser(parameter: .init(firstname: firstNameTextField.text!, lastname: lastNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, passwordConfirmation: passwordTextField.text!)) { (result) in
+            switch result {
+            case .success(_):
+                let controller = HomeViewController.instantiate(storyboardName: "Home")
+                self.navigationController?.modalPresentationStyle = .fullScreen
+                self.navigationController?.pushViewController(controller, animated: true)
+            case .failure(let error):
+                print(error.localizedDescription)
+                return
+            }
         }
         
-        let controller = HomeViewController.instantiate(storyboardName: "Home")
-        navigationController?.modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(controller, animated: true)
     }
     
     

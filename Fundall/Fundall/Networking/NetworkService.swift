@@ -15,18 +15,32 @@ struct NetworkService {
     
     private init() {}
     
-    func registerUser(completion: @escaping(Result<SignUpResponse, Error>) -> Void) {
-        request(route: .register, method: .post, parameters: [:], completion: completion)
+    /// This function helps to register a new user using the data from the parameters
+    /// - Parameters:
+    ///   - parameter: This refers to the parameters that will be added to the request body
+    ///   - completion: completion to know when the request has been executed
+    func registerUser(parameter: SignUpRequest, completion: @escaping(Result<SignUpResponse, Error>) -> Void) {
+        request(route: .register, method: .post, parameters: parameter.asParameter, completion: completion)
     }
     
-    func authenticateUser(completion: @escaping(Result<LoginResponse, Error>) -> Void) {
-        request(route: .login, method: .post, parameters: [:], completion: completion)
+    /// This function helps to authenticate a new user, that is, check if the user has an account
+    /// - Parameters:
+    ///   - parameter: This refers to the parameters that will be added to the request body
+    ///   - completion: completion to know when the request has been executed
+    func authenticateUser(parameter: LoginRequest, completion: @escaping(Result<LoginResponse, Error>) -> Void) {
+        request(route: .login, method: .post, parameters: parameter.asParameter, completion: completion)
     }
     
-    func updateAvatar(completion: @escaping(Result<AvatarResponse, Error>) -> Void) {
+    /// This function helps the user to update avatar
+    /// - Parameters:
+    ///   - parameter: This refers to the parameters that will be added to the request body
+    ///   - completion: completion to know when the request has been executed
+    func updateAvatar(parameter: AvatarRequest, completion: @escaping(Result<AvatarResponse, Error>) -> Void) {
         request(route: .updateAvatar, method: .post, parameters: [:], completion: completion)
     }
     
+    /// This function helps to get user profile
+    /// - Parameter completion: completion to know when the request has been executed
     func getUserData(completion: @escaping(Result<ProfileResponse, Error>) -> Void) {
         request(route: .getProfile, method: .get, completion: completion)
     }
@@ -43,7 +57,12 @@ struct NetworkService {
         let urlString = Route.baseURL + route.description
         guard let url = urlString.asURL else { return nil }
         var urlRequest = URLRequest(url: url)
-        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        switch route {
+        case .login, .register, .getProfile:
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        case .updateAvatar:
+            urlRequest.addValue("multipart/form-data", forHTTPHeaderField: "Content-Type")
+        }
         urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
         urlRequest.addValue("Bearer 'API_TOKEN'", forHTTPHeaderField: "Authorization")
         urlRequest.httpMethod = method.rawValue
