@@ -15,9 +15,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func didTapRequestCard(_ sender: UIButton) {
+
     }
     
     @IBAction func didTapAnalytics(_ sender: UIButton) {
+        
     }
     
 }

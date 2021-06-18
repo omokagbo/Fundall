@@ -7,10 +7,22 @@
 
 import Foundation
 
-struct SignUpRequest: Codable {
-    let firstName: String
-    let lastName: String
+struct SignUpRequest {
+    let firstname: String
+    let lastname: String
     let email: String
     let password: String
     let passwordConfirmation: String
+}
+
+extension SignUpRequest {
+    var asParameter: Parameter {
+        return [
+            "firstname": firstname,
+            "lastname": lastname,
+            "email": email,
+            "password": password,
+            "password_confirmation": password
+        ]
+    }
 }

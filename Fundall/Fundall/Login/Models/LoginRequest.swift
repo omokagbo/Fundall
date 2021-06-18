@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct LoginRequest: Codable {
+struct LoginRequest {
     let email: String
     let password: String
+}
+
+extension LoginRequest {
+    var asParameter: Parameter {
+        return [
+            "email": email,
+            "password": password
+        ]
+    }
 }
