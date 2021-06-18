@@ -166,6 +166,7 @@
                     </view>
                     <connections>
                         <outlet property="firstNameLbl" destination="W1Q-Kj-NyU" id="ZDO-Vf-idX"/>
+                        <outlet property="firstNameLbl2" destination="2lY-ot-u7U" id="qFL-dh-eoc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
