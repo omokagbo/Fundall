@@ -43,6 +43,7 @@
 		B4D0A119267C1436003FC11D /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D0A118267C1436003FC11D /* Analytics.storyboard */; };
 		B4D0A11B267C1F58003FC11D /* CardTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */; };
 		B4D0A11D267C1F6E003FC11D /* CardTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */; };
+		B4D0A121267C46CF003FC11D /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A120267C46CF003FC11D /* Extension+Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		B4D0A118267C1436003FC11D /* Analytics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
 		B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeTableViewCell.swift; sourceTree = "<group>"; };
+		B4D0A120267C46CF003FC11D /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				B433F73B2677DE27003B6372 /* UIViewController+Extension.swift */,
 				B421F2F72677FB1D001F59C7 /* UIView+Extension.swift */,
 				B421F2F9267805A2001F59C7 /* String+Extension.swift */,
+				B4D0A120267C46CF003FC11D /* Extension+Data.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				B4D0A11B267C1F58003FC11D /* CardTypeCollectionViewCell.swift in Sources */,
 				B4D0A0ED267B6F13003FC11D /* Route.swift in Sources */,
 				B4D0A11D267C1F6E003FC11D /* CardTypeTableViewCell.swift in Sources */,
+				B4D0A121267C46CF003FC11D /* Extension+Data.swift in Sources */,
 				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
 				B4D0A0FD267BED8C003FC11D /* ProfileRequest.swift in Sources */,
 				B4D0A10D267BF064003FC11D /* SignUpResponse.swift in Sources */,

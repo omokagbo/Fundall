@@ -28,25 +28,24 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        NetworkService.shared.myFirstRequest { (result) in
-//            switch result {
-//            case .success(let data):
-//                print(data)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//                return
-//            }
-//        }
+        NetworkService.shared.authenticateUser { (result) in
+            switch result {
+            case .success(let data):
+                print(data)
+            case .failure(let error):
+                print(error.localizedDescription)
+                return
+            }
+        }
         self.setNavBar()
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
         validateTextFields()
         
-        
-        
-        
-        
+        NetworkService.shared.registerUser { (result) in
+            
+        }
         
         let controller = HomeViewController.instantiate(storyboardName: "Home")
         navigationController?.modalPresentationStyle = .fullScreen

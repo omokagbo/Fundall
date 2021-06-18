@@ -14,3 +14,10 @@ struct SignUpRequest: Codable {
     let password: String
     let passwordConfirmation: String
 }
+
+//extension SignUpRequest {
+//    var asParameter: Parameter {
+//        var params: Parameter = [:]
+//        return params
+//    }
+//}

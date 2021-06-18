@@ -15,19 +15,19 @@ struct NetworkService {
     
     private init() {}
     
-    func registerUser(completion: @escaping(Result<SignUpRequest, Error>) -> Void) {
-        request(route: .register, method: .post, completion: completion)
+    func registerUser(completion: @escaping(Result<SignUpResponse, Error>) -> Void) {
+        request(route: .register, method: .post, parameters: [:], completion: completion)
     }
     
-    func authenticateUser(completion: @escaping(Result<LoginRequest, Error>) -> Void) {
-        request(route: .login, method: .post, completion: completion)
+    func authenticateUser(completion: @escaping(Result<LoginResponse, Error>) -> Void) {
+        request(route: .login, method: .post, parameters: [:], completion: completion)
     }
     
-    func updateAvatar(completion: @escaping(Result<AvatarRequest, Error>) -> Void) {
-        request(route: .updateAvatar, method: .post, completion: completion)
+    func updateAvatar(completion: @escaping(Result<AvatarResponse, Error>) -> Void) {
+        request(route: .updateAvatar, method: .post, parameters: [:], completion: completion)
     }
     
-    func getUserData(completion: @escaping(Result<ProfileRequest, Error>) -> Void) {
+    func getUserData(completion: @escaping(Result<ProfileResponse, Error>) -> Void) {
         request(route: .getProfile, method: .get, completion: completion)
     }
     
