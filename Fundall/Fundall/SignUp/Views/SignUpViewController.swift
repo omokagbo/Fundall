@@ -42,6 +42,12 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
         validateTextFields()
+        
+        
+        
+        
+        
+        
         let controller = HomeViewController.instantiate(storyboardName: "Home")
         navigationController?.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(controller, animated: true)
@@ -95,4 +101,5 @@ class SignUpViewController: UIViewController {
                            alertMessage: "Password must be alphanumeric and must be greater than 8 characters")
         }
     }
+    
 }

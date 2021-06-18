@@ -15,8 +15,20 @@ struct NetworkService {
     
     private init() {}
     
-    func myFirstRequest(completion: @escaping(Result<LoginRequest, Error>) -> Void) {
+    func registerUser(completion: @escaping(Result<SignUpRequest, Error>) -> Void) {
+        request(route: .register, method: .post, completion: completion)
+    }
+    
+    func authenticateUser(completion: @escaping(Result<LoginRequest, Error>) -> Void) {
         request(route: .login, method: .post, completion: completion)
+    }
+    
+    func updateAvatar(completion: @escaping(Result<AvatarRequest, Error>) -> Void) {
+        request(route: .updateAvatar, method: .post, completion: completion)
+    }
+    
+    func getUserData(completion: @escaping(Result<ProfileRequest, Error>) -> Void) {
+        request(route: .getProfile, method: .get, completion: completion)
     }
     
     /// This function helps to generate a URLRequest
@@ -71,10 +83,10 @@ struct NetworkService {
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8) ?? "Could not convert to string"
-                print("The response is: \(responseString)")
+                print("\(responseString)")
             } else if let error = error {
                 result = .failure(error)
-                print("The error is: \(error.localizedDescription)")
+                print("\(error.localizedDescription)")
             }
             
             DispatchQueue.main.async {
