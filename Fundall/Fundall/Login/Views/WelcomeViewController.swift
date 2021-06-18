@@ -16,6 +16,10 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let firstName = UserDefaults.standard.string(forKey: "firstName"), let email = UserDefaults.standard.string(forKey: "email") {
+            firstNameLbl.text = "\(firstName)"
+            emailLbl.text = "\(email)"
+        }
     }
     
     @IBAction func hidePswdBtnTapped(_ sender: UIButton) {
@@ -25,9 +29,20 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func didTapLoginBtn(_ sender: UIButton) {
-        let controller = HomeViewController.instantiate(storyboardName: "Home")
-        navigationController?.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(controller, animated: true)
+        if let email = emailLbl.text, !email.isEmpty, email != "", let password = passwordTextField.text, !password.isEmpty, password != "" {
+            NetworkService.shared.authenticateUser(parameter: LoginRequest.init(email: emailLbl.text!, password: passwordTextField.text!)) { (result) in
+                switch result {
+                case .success(_):
+                    let controller = HomeViewController.instantiate(storyboardName: "Home")
+                    self.navigationController?.modalPresentationStyle = .fullScreen
+                    self.navigationController?.pushViewController(controller, animated: true)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    return
+                }
+            }
+        }
+        
     }
     
     @IBAction func didTapCreateAcct(_ sender: UIButton) {

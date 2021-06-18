@@ -51,7 +51,7 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func loginBtnTapped(_ sender: UIButton) {
-        let controller = WelcomeViewController.instantiate(storyboardName: "Welcome")
+        let controller = LoginViewController.instantiate(storyboardName: "Login")
         navigationController?.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(controller, animated: true)
     }
