@@ -8,7 +8,7 @@
 import Foundation
 
 struct SignUpResponse: Codable {
-    let response: SignUpResponseType
+    let success: SignUpResponseType
 }
 
 struct SignUpResponseType: Codable {

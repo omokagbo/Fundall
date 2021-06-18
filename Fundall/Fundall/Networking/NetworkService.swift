@@ -124,20 +124,11 @@ struct NetworkService {
         }
         switch result {
         case .success(let data):
-            guard let response = try? JSONDecoder().decode(APIResponse<T>.self, from: data) else {
+            guard let response = try? JSONDecoder().decode(T.self, from: data) else {
                 completion(.failure(AppError.errorDecoding))
                 return
             }
-            if let error = response.error {
-                completion(.failure(AppError.serverError(error)))
-                return
-            }
-            if let decodedData = response.data {
-                completion(.success(decodedData))
-            } else {
-                completion(.failure(AppError.unknownError))
-            }
-            
+            completion(.success(response))
         case .failure(let error):
             completion(.failure(error))
         }

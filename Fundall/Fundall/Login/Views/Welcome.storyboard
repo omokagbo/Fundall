@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="IQPreviousNextView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                                                 <color key="tintColor" systemColor="systemGray3Color"/>
                                                 <state key="normal" image="eye" catalog="system"/>
                                                 <connections>
-                                                    <action selector="hidePswdBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q1o-hA-QLa"/>
+                                                    <action selector="hidePswdBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Pit-UP-HJ3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -100,6 +100,9 @@
                                 <state key="normal" title="LOG IN">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLoginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bTz-kg-qm3"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UxD-w7-z3Q" userLabel="New here">
                                 <rect key="frame" x="20" y="625.5" width="210" height="33"/>
@@ -116,6 +119,9 @@
                                         <state key="normal" title="Create Account">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapCreateAcct:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ITb-Yj-zcw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -142,10 +148,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailLbl" destination="RcH-O7-xxc" id="KY6-MI-TQL"/>
-                        <outlet property="firstNameLbl" destination="Ucn-NB-AHv" id="nyg-tL-gbx"/>
-                        <outlet property="hidePswdBtn" destination="0IW-U0-peV" id="Pkn-db-5ms"/>
-                        <outlet property="passwordTextField" destination="3kL-Wi-dbi" id="G6C-3k-hAj"/>
+                        <outlet property="emailLbl" destination="RcH-O7-xxc" id="4g9-JE-Mx9"/>
+                        <outlet property="firstNameLbl" destination="Ucn-NB-AHv" id="kBD-GW-bI1"/>
+                        <outlet property="hidePswdBtn" destination="0IW-U0-peV" id="dAF-Mk-EOs"/>
+                        <outlet property="passwordTextField" destination="3kL-Wi-dbi" id="Ndg-Ad-5ds"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
