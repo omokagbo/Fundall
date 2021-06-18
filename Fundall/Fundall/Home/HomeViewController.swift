@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func didTapRequestCard(_ sender: UIButton) {
+        let controller = RequestCardViewController.instantiate(storyboardName: "RequestCard")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func didTapAnalytics(_ sender: UIButton) {
