@@ -20,22 +20,23 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavBar()
+        //        if UserDefaults.standard.bool(forKey: "isLoggedIn") == true {
+        //            let controller = LoginViewController.instantiate(storyboardName: "LifeStyle")
+        //            self.navigationController?.modalPresentationStyle = .fullScreen
+        //            self.navigationController?.pushViewController(controller, animated: true)
+        //        }
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
-        validateTextFields()
-        NetworkService.shared.registerUser(parameter: .init(firstname: firstNameTextField.text!, lastname: lastNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, passwordConfirmation: passwordTextField.text!)) { (result) in
-            switch result {
-            case .success(_):
-                let controller = HomeViewController.instantiate(storyboardName: "Home")
-                self.navigationController?.modalPresentationStyle = .fullScreen
-                self.navigationController?.pushViewController(controller, animated: true)
-            case .failure(let error):
-                print(error.localizedDescription)
-                return
-            }
-        }
-        
+
+//        }
+        //        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        //        if let email = emailTextField.text, !email.isEmpty, email != "" {
+        //            UserDefaults.standard.setValue(email, forKey: "email")
+        //        }
+        //        if let firstName = firstNameTextField.text, !firstName.isEmpty, firstName != "" {
+        //            UserDefaults.standard.setValue(firstName, forKey: "firstName")
+        //        }
     }
     
     

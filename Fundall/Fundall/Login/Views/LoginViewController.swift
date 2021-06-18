@@ -19,6 +19,9 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func switchAcctTapped(_ sender: UIButton) {
+        let controller = LoginViewController.instantiate(storyboardName: "Login")
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func createAcctTapped(_ sender: UIButton) {
@@ -26,6 +29,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func enterPswdTapped(_ sender: UIButton) {
+        let controller = LoginViewController.instantiate(storyboardName: "Welcome")
+        self.navigationController?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func biometricsTapped(_ sender: UIButton) {

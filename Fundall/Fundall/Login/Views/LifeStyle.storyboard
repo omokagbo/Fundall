@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Life Style View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LifeStyleViewController" id="Y6W-OH-hqX" customClass="LifeStyleViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="switchAcctTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="70C-NF-bbK"/>
+                                            <action selector="switchAcctTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GKE-ta-Vd1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,7 +92,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="createAcctTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5BY-iV-Asr"/>
+                                            <action selector="createAcctTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rat-n9-1C0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,7 +109,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="kissclipart-padlock-icon-svg-clipart-computer-icons-padlock-b332b13760094ae5"/>
                                         <connections>
-                                            <action selector="enterPswdTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Vpt-Kl-QVy"/>
+                                            <action selector="enterPswdTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QxH-Rj-efv"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="3By-AE-dqq">
@@ -131,7 +131,7 @@
                                         </constraints>
                                         <state key="normal" image="fingerprint-png-11552949322aqztzlkylu"/>
                                         <connections>
-                                            <action selector="biometricsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UZ4-mC-oka"/>
+                                            <action selector="biometricsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AOA-Ff-9VW"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biometrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-Z8-ZDq">
@@ -165,7 +165,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstNameLbl" destination="W1Q-Kj-NyU" id="Ee1-of-Xhu"/>
+                        <outlet property="firstNameLbl" destination="W1Q-Kj-NyU" id="ZDO-Vf-idX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
