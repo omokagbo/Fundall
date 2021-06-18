@@ -14,4 +14,10 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    @IBAction func didTapRequestCard(_ sender: UIButton) {
+    }
+    
+    @IBAction func didTapAnalytics(_ sender: UIButton) {
+    }
+    
 }
