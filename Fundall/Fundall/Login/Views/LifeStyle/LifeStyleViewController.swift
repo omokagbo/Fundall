@@ -10,12 +10,14 @@ import UIKit
 class LifeStyleViewController: UIViewController {
     
     @IBOutlet weak var firstNameLbl: UILabel!
-
+    @IBOutlet weak var firstNameLbl2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.isHidden = true
         if let firstName = UserDefaults.standard.string(forKey: "firstName") {
             firstNameLbl.text = "\(firstName)'s"
+            firstNameLbl2.text = "\(firstName)?"
         }
     }
     
