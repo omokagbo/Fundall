@@ -38,6 +38,12 @@
 		B4D0A10B267BF059003FC11D /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A10A267BF059003FC11D /* ProfileResponse.swift */; };
 		B4D0A10D267BF064003FC11D /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A10C267BF064003FC11D /* SignUpResponse.swift */; };
 		B4D0A10F267BF2E0003FC11D /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A10E267BF2E0003FC11D /* APIResponse.swift */; };
+		B4D0A113267C13D2003FC11D /* RequestCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D0A112267C13D2003FC11D /* RequestCard.storyboard */; };
+		B4D0A115267C13E6003FC11D /* RequestCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A114267C13E6003FC11D /* RequestCardViewController.swift */; };
+		B4D0A117267C1421003FC11D /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A116267C1421003FC11D /* AnalyticsViewController.swift */; };
+		B4D0A119267C1436003FC11D /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D0A118267C1436003FC11D /* Analytics.storyboard */; };
+		B4D0A11B267C1F58003FC11D /* CardTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */; };
+		B4D0A11D267C1F6E003FC11D /* CardTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +78,12 @@
 		B4D0A10A267BF059003FC11D /* ProfileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
 		B4D0A10C267BF064003FC11D /* SignUpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		B4D0A10E267BF2E0003FC11D /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		B4D0A112267C13D2003FC11D /* RequestCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestCard.storyboard; sourceTree = "<group>"; };
+		B4D0A114267C13E6003FC11D /* RequestCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCardViewController.swift; sourceTree = "<group>"; };
+		B4D0A116267C1421003FC11D /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		B4D0A118267C1436003FC11D /* Analytics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
+		B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,8 @@
 				B4D0A0F8267BED4C003FC11D /* Profile */,
 				B4D0A0F9267BED5B003FC11D /* Avatar */,
 				B4D0A0DA267B6CDE003FC11D /* Networking */,
+				B4D0A110267C138A003FC11D /* Request Card */,
+				B4D0A111267C1397003FC11D /* Analytics */,
 				B433F72D2677D941003B6372 /* LaunchScreen */,
 				B433F73A2677DE08003B6372 /* Helpers */,
 				B433F72326778ACD003B6372 /* Resources */,
@@ -292,6 +306,42 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B4D0A110267C138A003FC11D /* Request Card */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A11F267C2EA1003FC11D /* Views */,
+				B4D0A11E267C2E78003FC11D /* Cells */,
+			);
+			path = "Request Card";
+			sourceTree = "<group>";
+		};
+		B4D0A111267C1397003FC11D /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A116267C1421003FC11D /* AnalyticsViewController.swift */,
+				B4D0A118267C1436003FC11D /* Analytics.storyboard */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		B4D0A11E267C2E78003FC11D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A11A267C1F58003FC11D /* CardTypeCollectionViewCell.swift */,
+				B4D0A11C267C1F6E003FC11D /* CardTypeTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B4D0A11F267C2EA1003FC11D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0A112267C13D2003FC11D /* RequestCard.storyboard */,
+				B4D0A114267C13E6003FC11D /* RequestCardViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +407,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D0A113267C13D2003FC11D /* RequestCard.storyboard in Resources */,
+				B4D0A119267C1436003FC11D /* Analytics.storyboard in Resources */,
 				B433F7332677DB58003B6372 /* Login.storyboard in Resources */,
 				B433F7352677DB74003B6372 /* Home.storyboard in Resources */,
 				B433F71B267787E4003B6372 /* LaunchScreen.storyboard in Resources */,
@@ -385,10 +437,13 @@
 				B4D0A0EF267B71AC003FC11D /* Method.swift in Sources */,
 				B4D0A10B267BF059003FC11D /* ProfileResponse.swift in Sources */,
 				B4D0A0DC267B6CFA003FC11D /* NetworkService.swift in Sources */,
+				B4D0A115267C13E6003FC11D /* RequestCardViewController.swift in Sources */,
 				B4D0A103267BEDF6003FC11D /* AvatarRequest.swift in Sources */,
 				B4D0A107267BF045003FC11D /* AvatarResponse.swift in Sources */,
 				B4D0A0C02678B946003FC11D /* SignUpRequest.swift in Sources */,
+				B4D0A11B267C1F58003FC11D /* CardTypeCollectionViewCell.swift in Sources */,
 				B4D0A0ED267B6F13003FC11D /* Route.swift in Sources */,
+				B4D0A11D267C1F6E003FC11D /* CardTypeTableViewCell.swift in Sources */,
 				B433F72F2677DB26003B6372 /* SignUpViewController.swift in Sources */,
 				B4D0A0FD267BED8C003FC11D /* ProfileRequest.swift in Sources */,
 				B4D0A10D267BF064003FC11D /* SignUpResponse.swift in Sources */,
@@ -396,6 +451,7 @@
 				B4D0A0F7267BE578003FC11D /* AppError.swift in Sources */,
 				B433F711267787E1003B6372 /* SceneDelegate.swift in Sources */,
 				B4D0A0C42678B96A003FC11D /* LoginRequest.swift in Sources */,
+				B4D0A117267C1421003FC11D /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

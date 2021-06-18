@@ -28,15 +28,15 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkService.shared.myFirstRequest { (result) in
-            switch result {
-            case .success(let data):
-                print(data)
-            case .failure(let error):
-                print(error.localizedDescription)
-                return
-            }
-        }
+//        NetworkService.shared.myFirstRequest { (result) in
+//            switch result {
+//            case .success(let data):
+//                print(data)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//                return
+//            }
+//        }
         self.setNavBar()
     }
     
