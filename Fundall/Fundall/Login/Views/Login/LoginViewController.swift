@@ -33,7 +33,9 @@ class LoginViewController: UIViewController {
         if let email = emailTextField.text, !email.isEmpty, email != "", let password = passwordTextField.text, !password.isEmpty, password != "" {
             NetworkService.shared.authenticateUser(parameter: LoginRequest.init(email: email, password: password)) { (result) in
                 switch result {
-                case .success(_):
+                case .success(let data):
+                    let firstName = data.response?.user?.firstName
+                    UserDefaults.standard.setValue(firstName, forKey: "firstName")
                     let controller = HomeViewController.instantiate(storyboardName: "Home")
                     self.navigationController?.modalPresentationStyle = .fullScreen
                     self.navigationController?.pushViewController(controller, animated: true)
@@ -42,6 +44,11 @@ class LoginViewController: UIViewController {
                     return
                 }
             }
+        }
+        
+        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        if let email = emailTextField.text, !email.isEmpty, email != "" {
+            UserDefaults.standard.setValue(email, forKey: "email")
         }
     }
     
